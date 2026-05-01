@@ -1,79 +1,44 @@
-# Travel Book 🗺
+# 🗺️ Travel Book - Personal Location Diary
 
-## 🇬🇧 English
-
-Travel Book is an Android application that allows users to save places they visit and view them later on a map.
-
-Users can select a location on Google Maps, save it with a title, and create their own personal travel diary.
-
-### Features
-
-- Save locations on the map
-- View saved places
-- Add titles to locations
-- Persistent storage using Room / SQLite
-- Google Maps integration
-- Location permissions support
-
-### Tech Stack
-
-- Kotlin / Java
-- Android Studio
-- Google Maps SDK
-- Room / SQLite Database
-- Location Services
-
-### How It Works
-
-Users can long-press on the map to select a location.  
-After selecting the location, they can save it with a title.  
-
-Saved locations are stored locally and can be viewed later.
-
-### Google Maps API Key
-
-To run this project, you must add your own Google Maps API key.
-
-Add the following line to your `local.properties` file:
-
-MAPS_API_KEY=YOUR_API_KEY
+> A native Android application that empowers users to create a customized travel diary. By integrating Google Maps and local database storage, users can seamlessly pin, save, document, and revisit their favorite locations directly on their mobile device.
 
 ---
 
-## 🇹🇷 Türkçe
+## 🎯 Key Features
 
-Travel Book, kullanıcıların ziyaret ettikleri yerleri kaydedip daha sonra harita üzerinde görüntüleyebilecekleri bir Android uygulamasıdır.
+*   📍 **Interactive Mapping:** Effortlessly drop a pin by long-pressing on the map to select and save specific coordinates.
+*   💾 **Persistent Local Storage:** Reliable and efficient data management utilizing Room/SQLite database architecture.
+*   🏷️ **Custom Bookmarks:** Personalize saved locations by assigning custom titles and descriptions for easy identification.
+*   🔒 **Permission Management:** Gracefully handles Android location tracking permissions to ensure user privacy and app stability.
+*   🗺️ **Seamless Retrieval:** Access and view previously saved locations seamlessly on the map interface at any time.
 
-Kullanıcılar Google Maps üzerinde bir konum seçebilir ve bu konumu bir başlık ile kaydederek kendi seyahat günlüğünü oluşturabilir.
+---
 
-### Özellikler
+## 🛠️ Technologies & Architecture
 
-- Harita üzerinde konum kaydetme
-- Kaydedilen yerleri görüntüleme
-- Konumlara başlık ekleme
-- Room / SQLite ile kalıcı veri saklama
-- Google Maps entegrasyonu
-- Konum izinleri desteği
+| Technology | Role | Description |
+| :--- | :--- | :--- |
+| 📱 **Native Android** | Platform | Core application development using Kotlin/Java and Android Studio. |
+| 🌍 **Google Maps SDK** | Maps Integration | Renders interactive maps and handles geolocation tracking. |
+| 🗄️ **Room / SQLite** | Local Database | Robust offline data persistence and structural querying. |
+| 📡 **Location Services** | Device Hardware | Utilizes Android's location services to pinpoint user coordinates. |
 
-### Kullanılan Teknolojiler
+---
 
-- Kotlin / Java
-- Android Studio
-- Google Maps SDK
-- Room / SQLite veritabanı
-- Location servisleri
+## 💻 Local Setup & Installation
 
-### Nasıl Çalışır
+To run this project locally, follow these steps:
+```bash
+# 1. Clone the repository
+git clone [https://github.com/Furkanfidanogl/travel-book.git](https://github.com/Furkanfidanogl/travel-book.git)
 
-Kullanıcı harita üzerinde uzun basarak bir konum seçer.  
-Daha sonra bu konumu bir başlık ile kaydedebilir.
+# 2. Open the project in Android Studio
 
-Kaydedilen konumlar cihazda saklanır ve daha sonra tekrar görüntülenebilir.
 
-### Google Maps API Key
+⚠️ Configuration Required:
+This project requires a valid Google Maps API Key to render the map.
 
-Projeyi çalıştırmak için kendi Google Maps API anahtarınızı eklemeniz gerekir.
+Add the following line to your local.properties file in the root directory:
 
-`local.properties` dosyasına şu satırı ekleyin:
-
+Properties
 MAPS_API_KEY=YOUR_API_KEY
